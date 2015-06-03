@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: slategray;
+  color: white;
+  font-family: Helvetica;
+  padding: 20px;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.dropover {
+  text-decoration: underline;
+}
+
+.dropover-content {
+  background: slategray;
+  color: white;
+  padding: 20px;
+  font-family: Helvetica;
+  display: none;
+}

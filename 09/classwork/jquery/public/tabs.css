@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.page-container {
+  margin: 20px;
+}
+
+.tab-container {
+  font-size: 0;
+}
+
+.tab {
+  width: 100px;
+  text-align: center;
+  display: inline;
+  border: solid 1px black;
+  font-size: 20px;
+  padding: 15px;
+  line-height: 50px;
+  transition: all 1s;
+}
+
+.tab.active {
+  background: pink;
+}
+
+.content {
+  display: none;
+  transition: all 1s;
+}
+
+.content.active {
+  display: block;
+}
+
+.content-container {
+  border: solid 1px black;
+  padding: 20px;
+}
