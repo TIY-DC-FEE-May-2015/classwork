@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.big {
+  height: 100vh;
+}
+
+.blue {
+  width: 100px;
+  height: 100px;
+  margin: 0px auto;
+  border: solid 1px black;
+  background-image: url("jackson-pollock.png");
+  background-position: center;
+}
+
+.stripe {
+  width: 200px;
+  height: 100vh;
+  background-color: red;
+  margin: 0px auto;
+}
