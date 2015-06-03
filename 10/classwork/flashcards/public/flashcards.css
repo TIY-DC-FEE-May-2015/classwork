@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.input-row textarea {
+  height: 120px;
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card {
+  font-size: 24px;
+  width: 500px;
+  border: solid 1px black;
+  margin: 10px;
+  padding: 15px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  height: 300px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("card.gif");
+  background-size: cover;
+}
+
+.back, .front {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card .back {
+  display: none;
+}
+
+.card.flipped .front {
+  display: none;
+}
+
+.card.flipped .back {
+  display: block;
+}

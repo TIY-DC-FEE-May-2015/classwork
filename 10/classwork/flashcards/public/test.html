@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashcards!</title>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href="flashcards.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="flashcard-container">
+    <div class="input-row">
+      <textarea id="front-text"></textarea>
+      <textarea id="back-text"></textarea>
+      <button id="add-card">Add a new card</button>
+    </div>
+
+    <div class="card-row">
+      <div class="card">
+        <div class="front">
+          Vertical centering
+        </div>
+        <div class="back">
+          position: relative; top: 50%; transform: translateY(-50%);
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          How do you add an element with jQuery?
+        </div>
+        <div class="back">
+          $("selector").append(whatever) or $("selector").prepend("whatever")
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="front">
+          What the hell just happened and how do I fix it
+        </div>
+        <div class="back">
+          vertical-align: top;
+        </div>
+      </div>
+
+      <div class="card"><div class="front">Function Definition vs. Execution</div><div class="back">Definition: Saying what will happen at some point, Execution: Making something happen</div></div>
+
+      <div class="card"><div class="front">Don't Repeat Yourself (DRY)</div><div class="back">Write modular code - only one function should do anything</div></div>
+
+      <div class="card"><div class="front">Refactoring</div><div class="back">Taking existing, working code and improving it (make it more DRY)</div></div>
+    </div>
+
+  </div>
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/underscore.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-container {
+  width: 400px;
+  margin: 0px auto;
+  border: solid 1px gray;
+  padding: 10px;
+}
+
+.item-input {
+  width: 100%;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.item {
+  padding: 10px 5px;
+  font-size: 22px;
+  border-bottom: dotted 1px gray;
+  position: relative;
+}
+
+.item.complete {
+  text-decoration: line-through;
+  color: red;
+}
+
+.todo-container.done .item {
+  display: none;
+}
+
+.todo-container.done .item.complete {
+  display: block;
+}
+
+.todo-container.active .item.complete {
+  display: none;
+}
+
+.item .delete {
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+

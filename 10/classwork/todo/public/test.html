@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="todo-container">
+    <div class="input-row">
+      <input class="item-input" 
+            type="text" 
+            id="add-item" 
+            placeholder="What needs to be done?"/>
+      <button id="input-button">Add an item</button>
+      
+      <button id="done-button">Only show completed items</button>
+      <button id="active-button">Only show active items</button>
+    </div>
+    <div class="item-container">
+    </div>
+  </div>
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/underscore.js"></script>
+
+  <script src="index.js"></script>
+</body>
+</html>
