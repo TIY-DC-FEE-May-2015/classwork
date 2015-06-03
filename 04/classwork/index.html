@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kyle Demos A Whole Bunch Of Miscellaneous Stuff About CSS</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+
+      <form method="POST" action="http://www.google.com">
+        
+        <div class="row">
+          My name is: 
+          <input type="text" id="user-name" name="username" />
+        </div>
+
+        <div class="row">
+          Password:
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <div class="row">
+          Number:
+          <input type="number" name="number" id="num" />
+        </div>
+
+        <div class="row">
+          Email:
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="row">
+          Color:
+          <input type="color" name="color" id="color" />
+        </div>
+
+        <div class="row">
+          Datetime:
+          <input type="date" name="date" id="date" />
+        </div>
+
+
+        <div class="row">
+          Check all that apply:
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="thing" value="awesome" />
+                I am awesome!
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="thing" value="super" id="super-box" />
+              <label for="super-box">I am super!</label>
+            </li>
+            <li>
+              <input type="checkbox" name="thing" value="great" />
+              I am great!
+            </li>
+            <li>
+              <input type="checkbox" name="thing" value="okay" />
+              I am okay.jpg
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          Choose one:
+          <ul>
+            <li>
+              <input type="radio" name="mutiple" value="a" /> A
+            </li>
+            <li>
+              <input type="radio" name="mutiple" value="b" /> B
+            </li>
+            <li>
+              <input type="radio" name="mutiple" value="C" /> C
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          Drop-down:
+          <select name="dropdown">
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+            <option value="4">D</option>
+          </select>
+        </div>
+
+        <button>Submit this bad boy</button>
+
+      </form>
+
+      <button>There is no functionality here</button>
+    </div>
+  </body>
+</html>
+

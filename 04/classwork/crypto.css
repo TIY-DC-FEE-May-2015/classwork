@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.hero {
+  background-color: orange;
+  height: 85vh;
+  color: white;
+  padding: 20px;
+  font-size: 22px;
+  position: relative;
+}
+
+.hero .message {
+  position: absolute;
+  top: 30%;
+  width: 40%;
+  left: 30px;
+  font-weight: bold;
+}
+
+.hero .logo {
+  background-image: url("logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45vh;
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  right: 30px;
+}
+
+.scroll-prompt {
+  text-align: center;
+  border: solid 2px black;
+  background: rgb(245, 245, 245);
+  height: 10vh;
+  width: 10vh;
+  margin: 0px auto;
+  border-radius: 10vh;
+}

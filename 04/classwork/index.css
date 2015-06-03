@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+input:invalid {
+  border: solid 1px red;
+}
