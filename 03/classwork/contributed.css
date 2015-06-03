@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  border: solid 1px rgb(229, 229, 229);
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+}
+
+.header {
+  background-color: RGB(245, 245, 245);
+  font-weight: bold;
+}
+
+.row {
+  padding: 8px;
+  border-top: solid 1px rgb(229, 229, 229);
+  position: relative;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("book-glyph.png");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.name {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.stars {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: RGB(65, 131, 196);
+}

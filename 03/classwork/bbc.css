@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 620px;
+  padding: 10px;
+  font-family: Arial;
+}
+
+.story-image {
+  width: 100%;
+}
+
+.date {
+  font-family: 'Gill Sans MT', 'Gill Sans', arial, helvetica, sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.headline {
+  background-image: url("http://ichef.bbci.co.uk/wwhp/624-351/mcs/media/images/83113000/jpg/_83113434_canary.wharf2.g..jpg");
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+
+.headline-text {
+  font-size: 24px;
+  color: white;
+  background: rgba(0, 0, 0, .5);
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.subheadline {
+  font-size: 16px;
+}
+
+.row {
+  font-size: 0px;
+}
+
+.cell {
+  display: inline-block;
+  width: 23.5%;
+  vertical-align: top;
+}
+
+.story {
+  font-size: 14px;
+  margin: 0px 1%;
+}
+
+.story:first-of-type {
+  margin-left: 0px;
+}
+
+.story:last-of-type {
+  margin-right: 0px;
+}
+
+.story-text {
+  font-weight: bold;
+  margin-top: 10px;
+}
