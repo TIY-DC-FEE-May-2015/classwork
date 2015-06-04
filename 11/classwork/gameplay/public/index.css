@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-container {
+  background: rgb(250, 250, 250);
+  height: 100vh;
+  position: relative;
+  /* 
+    Force the browser, when hovering over the container,
+    to display the "beach ball" progress cursor
+  */
+  cursor: progress; 
+}
+
+.hippo {
+  width: 70px;
+  height: 70px;
+  background-image:url("hippo.png");
+  transition: all 500ms; /* animates the top and left property changes */
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  z-index: 2; /* put the hippos on top of the oyster */
+}
+
+.oyster {
+  width: 70px;
+  height: 70px;
+  background-image:url("oyster.png"); /* buttered-toast.png */
+  position: absolute;
+  top: 400px;
+  left: 250px;
+  z-index: 1;
+}
+
+.end-message {
+  display: none;
+}
+
+.end-message.active {
+  display: block;
+  position: absolute;
+  height: 50vh;
+  top: 25vh;
+  width: 50%;
+  left: 25%;
+  background: rgba(255, 255, 255, .5);
+  z-index: 3;
+  text-align: center;
+}
+
+.message-title {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.message-score {
+  font-size: 24px;
+}
+
+.vertical-center {
+  /* 
+    Oh, how vertical centering ACTUALLY works...
+    
+    position: relative -- make the browser 
+      apply top/left/bottom/right to this element
+
+    top: 50% -- move the top pixel of this element
+      down to 50% of it's parent's height, so that
+      this element's top aligns with the parent's midpoint
+
+    transform: translateY(-50%) -- move the top pixel
+      of this element up by 50% of it's OWN height,
+      so that now this element's midpoint aligns
+      with the parent's midpoint
+  */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.message-button {
+  font-size: 24px;
+  background: forestgreen;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+
+  /* Adding differently colored borders 
+    can make buttons look textured quickly */
+  border-top: solid 2px rgb(240, 240, 240);
+  border-left: solid 2px rgb(240, 240, 240);
+  border-right: solid 2px rgb(220, 220, 220);
+  border-bottom: solid 2px rgb(220, 220, 220);
+}
