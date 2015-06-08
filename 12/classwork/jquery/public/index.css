@@ -1,0 +1,10 @@
+.idea-container, .add-container {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+}
+
+textarea {
+  height: 300px;
+  width: 400px;
+}
