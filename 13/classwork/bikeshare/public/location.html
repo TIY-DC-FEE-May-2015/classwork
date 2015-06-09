@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="location.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="copyLocation">
+  </div>
+
+
+  <template id="stationTemplate">
+    <div class="station">
+      <div class="name">{{ name }}</div>
+      <div class="bikes">{{ bikes }}</div>
+      <div class="docks">{{ docks }}</div>
+    </div>
+  </template>
+
+
+
+  <template id="cardTemplate">
+    <div class="card">
+      <div class="front">{{ front }}</div>
+      <div class="back">{{ back }}</div>
+    </div>
+  </template>
+
+  <template id="conditionalTemplate">
+    <div class="item {{#if complete}} checked {{/if}}">
+      {{ item }}
+    </div>
+  </template>
+
+  <template id="arrayTemplate">
+    {{#each items}}
+    <div class="item {{#if complete}} checked {{/if}}">
+      {{item}}
+    </div>
+    {{/each}}
+  </template>
+
+  <script type="text/javascript" src="libs/underscore.js"></script>
+  <script type="text/javascript" src="libs/handlebars.js"></script>
+  <script type="text/javascript" src="libs/jquery.js"></script>
+  <script type="text/javascript" src="the_right_way.js"></script>
+  
+</body>
+</html>

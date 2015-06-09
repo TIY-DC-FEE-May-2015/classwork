@@ -1,0 +1,30 @@
+template {
+  display: none;
+}
+
+.checked {
+  color: red;
+}
+
+.station {
+  font-size: 24px;
+  font-family: Helvetica;
+}
+
+.name {
+  display: inline-block;
+  width: 500px;
+  font-weight:bold;
+}
+
+.bikes {
+  color: red;
+  display: inline-block;
+  width: 100px;
+}
+
+.docks {
+  color: green;
+  display: inline-block;
+  width: 100px;
+}
