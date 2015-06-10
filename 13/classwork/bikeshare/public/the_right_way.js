@@ -141,6 +141,7 @@ $(document).on("ready", function(){
       // Call the previously compiled template function with that station object
       // This produces a string that looks like HTML
       var htmlString = templateFn(station)
+      console.log(station, htmlString)
 
       // Find the id=copyLocation element, append to it that HTML-looking string
       //
