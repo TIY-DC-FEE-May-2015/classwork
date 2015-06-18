@@ -1,0 +1,6 @@
+#leftSide, #rightSide {
+  width: 40%;
+  display: inline-block;
+  border-right: solid 1px black;
+  vertical-align: top;
+}

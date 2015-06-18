@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  height: 80px;
+  background: gray;
+  font-size: 30px;
+  line-height: 60px;
+  padding: 10px;
+}
+
+#clicky-thing {
+  background-image: url("garfield.png");
+  height: 300px;
+  width: 300px;
+}

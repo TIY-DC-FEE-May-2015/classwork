@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="target"></div>
+
+
+  <template id="kylesDemoTemplate">
+    {{#each this}}
+    <div class="station">
+      <div class='name'>{{ name }}</div>
+      <div class='bikes'>{{ bikes }}</div>
+      <div class='docks'>
+        {{#if docks}}
+        <span class="docks-container">{{ docks }}</span>
+        {{else}}
+        <span class="docks-container none">NONE</span>
+        {{/if}}
+      </div>
+      <div class="latitude">
+        {{ location.latitude }}
+      </div>
+    </div>
+    {{/each}}
+  </template>
+
+  <!--
+  <template id="kylesDemoTemplate">
+    <div class="station">
+      <div class='name'>{{ name }}</div>
+      <div class='bikes'>{{ bikes }}</div>
+      <div class='docks'>
+        <span class='docks-container {{none}}'>{{ docks }}</span>
+      </div>
+    </div>
+  </template> -->
+
+  <script type="text/javascript" src="libs/underscore.js"></script>
+  <script type="text/javascript" src="libs/handlebars.js"></script>
+  <script type="text/javascript" src="libs/jquery.js"></script>
+
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

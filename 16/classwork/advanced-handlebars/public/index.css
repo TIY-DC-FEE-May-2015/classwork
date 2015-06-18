@@ -1,0 +1,24 @@
+.name {
+  width: 200px;
+  display: inline-block;
+  border-right: solid 1px black;
+}
+
+.bikes {
+  color: red;
+  width: 50px;
+  display: inline-block;
+  border-right: solid 1px red;
+}
+
+.docks {
+  color: blue;
+  width: 50px;
+  display: inline-block;
+}
+
+.docks-container.none {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}

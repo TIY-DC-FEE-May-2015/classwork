@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stupid Cat Incremental Game</title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Future: Insert stuff about current state of game -->
+  <header>
+    <div class="currency">
+      You have <span id="currency-count">0</span> Kibbles&Bitcoins.
+    </div>
+  </header>
+
+  <!-- Main stuff that people will interact with -->
+  <main>
+    <div id="clicky-thing">
+    </div>
+
+    <div id="purchaseables">
+
+    </div>
+  </main>
+
+  <template id="purchaseableTemplate">
+    <div class="thingICanBuy">
+      <div class="name">{{ name }}</div>
+      <div class="cost">Cost: {{ cost }}</div>
+      <div class="owned">Owned: {{ owned }}</div>
+    </div>
+  </template>
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

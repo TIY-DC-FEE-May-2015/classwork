@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="leftSide">
+  </div>
+
+  <div id="rightSide">
+  </div>
+
+  <template id="leftSideBook">
+    <div class="left-book">
+      <div class="title">{{ title }}</div>
+    </div>
+  </template>
+
+  <template id="rightSideBook">
+    <div class="right-book">
+      <div class="title">Title: {{ title }}</div>
+      <div class="author">Author: {{ author }}</div>
+      <div class="description">Description: {{ description }}</div>
+    </div>
+  </template>
+
+  <script type="text/javascript" src="libs/underscore.js"></script>
+  <script type="text/javascript" src="libs/handlebars.js"></script>
+  <script type="text/javascript" src="libs/jquery.js"></script>
+
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
