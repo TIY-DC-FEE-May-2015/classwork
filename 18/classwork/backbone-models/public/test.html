@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="pizza-box">
+
+  </div>
+
+  <template id="pizza-template">
+    <div class="pizza-type" data-pizza-type="{{ name }}">
+      <div class="name"> {{ name }} </div>
+      <div class="hasSauce"> {{ hasSauce }} </div>
+      <div class="hasToppings"> {{ hasToppings }} </div>
+      <div class="hasCheese"> {{ hasCheese }} </div>
+    </div>
+  </template>
+  
+  <script src="libs/jquery.js"></script>
+  <script src="libs/underscore.js"></script>
+  <script src="libs/backbone.js"></script>
+  <script src="libs/handlebars.js"></script>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="candy-store">
+  </div>
+
+  <input type="text" id="new-candy" />
+  <button id="candy-button">Add Candy</button>
+
+  <template id="candy-template">
+    <div class="candy" data-candy="{{ cid }}">
+      <div class="name">{{ attributes.name }}</div>
+      <div class="price">{{ attributes.price }}</div>
+      <div class="qty">{{ attributes.quantity }}</div>
+    </div>
+  </template>
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/underscore.js"></script>
+  <script src="libs/backbone.js"></script>
+  <script src="libs/handlebars.js"></script>
+
+  <script src="dispatcher.js"></script>
+
+</body>
+</html>
