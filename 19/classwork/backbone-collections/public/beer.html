@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="beer.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="beer-list">
+  </div>
+
+  <template id="beer-template">
+    <div class="beer">
+      <div class="beer-data">
+        <div class="name">{{ name }}</div>
+        <div class="abv">ABV: {{ abv }}%</div>
+        <div class="quantity">Qty: {{ quantity }}</div>
+      </div>
+      <div class="beer-buttons">
+        <button class="increase-button">Increase Quantity</button>
+        <button class="decrease-button">Decrease Quantity</button>
+        <button class="delete-button">Delete Beer</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+
+  <script src="sync.js"></script>
+  <script src="beer.js"></script>
+
+</body>
+</html>

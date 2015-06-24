@@ -1,0 +1,17 @@
+.beer {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px gray;
+}
+
+.beer-data {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.beer-buttons {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
