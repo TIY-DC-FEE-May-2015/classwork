@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.donut {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px black;
+}
+
+.edit-donut {
+  display: none;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.edit-donut input {
+  font-size: 18px;
+}
+
+.edit-donut button {
+  font-size: 18px;
+}
+
+.page-container.editing .edit-donut {
+  display: block;
+}
+
+.page-container.editing .donut-list-container {
+  display: none;
+}

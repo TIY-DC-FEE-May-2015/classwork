@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="donut.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="page-container">
+    
+    <div class="edit-donut">
+      <div class="edit-name">
+        Name: <input type="text" id="donut-name" />
+      </div>
+      <div class="edit-hole">
+        Has a hole?: <input type="checkbox" id="donut-hole" />
+      </div>
+
+      <button id="save-donut">Save Donut</button>
+      <button id="cancel-button">Cancel</button>
+    </div>
+
+    <div class="donut-list-container">
+      <div id="donut-list"></div>
+      <button id="add-donut">Add New Donut</button>
+
+      There are <span id="donut-count"></span> donuts
+    </div>
+
+  </div>
+
+  <template id="donut-template">
+    <div class="donut">
+      <div class="name">{{ name }}</div>
+      
+      {{#if hole}}
+      <div class="hole">This donut does not have filling</div>
+      {{else}}
+      <div class="hole">This donut has filling</div>
+      {{/if}}
+
+      <div class="buttons">
+        <button class="delete-button">Eat this donut</button>
+        <button class="edit-button">Modify this donut</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+
+  <script src="donut-classes.js"></script>
+  <script src="donut.js"></script>
+
+</body>
+</html>
