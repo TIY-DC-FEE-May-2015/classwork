@@ -62,20 +62,27 @@ var toggleEditMode = function() {
 }
 
 $(document).on("ready", function(){
+  // Create a new collection
   var box = new DonutBox()
 
+  // Bind a listener to the add and remove events
+  // When those fire, update some unrelated text on the page
   box.on("add remove", function(){
     $("#donut-count").text(box.length)
   })
 
+  // Templatize the template
   templates.donut = Handlebars.compile( $("#donut-template").html() )
 
+  // Fetch the data from the server (it knows where via url property)
   box.fetch({
     success: function(collection) {
+      // Update the donut list with the data
       updateDonutList(collection)
     }
   })
 
+  // Bind a listener to the save donut button
   $("#save-donut").on("click", function(){
     // Check to see if we are currently editing a donut
     if (currentDonut) {
@@ -100,10 +107,12 @@ $(document).on("ready", function(){
 
   })
 
+  // Bind a listener to the cancel button
   $("#cancel-button").on("click", function(){
     toggleEditMode()
   })
 
+  // Bind a listener to the add a donut button
   $("#add-donut").on("click", function(){
     toggleEditMode()
     currentDonut = false
