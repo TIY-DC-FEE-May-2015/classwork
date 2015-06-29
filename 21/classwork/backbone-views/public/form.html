@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Form Field</title>
+  <link href="form.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="form-container">
+  </div>
+
+  <button id="the-button">Click me when done</button>
+
+  <template id="form-template">
+    <div class="field">
+      {{ name }}: <input type="text" class="text-input" />
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+
+  <script src="form-view.js"></script>
+  <script src="form.js"></script>
+  
+</body>
+</html>

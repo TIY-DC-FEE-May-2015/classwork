@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    .name {
+      display: inline-block;
+    }
+    .box {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container"></div>
+
+  <template id="generic-template">
+    <div class="name">
+      {{ name }}
+    </div>
+    <div class="box">
+      <input type="checkbox" class="box-input" />
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

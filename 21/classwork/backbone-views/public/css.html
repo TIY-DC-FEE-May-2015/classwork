@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Tricks Clone w/ Backbone Views</title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="page-container">
+
+    <header id="header-container"></header>
+
+    <main id="main-container"></main>
+
+  </div>
+
+
+
+  <template id="header-template">
+    <div class="logo">CSS Tricks</div>
+    <div class="tabs">
+      {{#each tabs}}
+      <div class="tab"
+        data-color="{{ color }}" 
+        style="border-top: solid 1px {{ color }}">
+          {{ title }}
+      </div>
+      {{/each}}
+    </div>
+  </template>
+
+  <template id="post-template">
+    <div class="post">
+      <div class="date">{{ date }}</div>
+      <div class="title">{{ title }}</div>
+      <div class="blurb">{{ blurb }}</div>
+      <div class="link">
+        <a href="{{ link }}">Read Article -&gt;</a>
+      </div>
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+  <script src="libs/moment.js"></script>
+
+  <script src="header-view.js"></script>
+  <script src="post-view.js"></script>
+
+  <script src="css-tricks.js"></script>
+
+</body>
+</html>

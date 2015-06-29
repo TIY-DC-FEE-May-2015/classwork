@@ -1,0 +1,98 @@
+@background: #222222;
+@white: rgb(255, 255, 255);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+body {
+  background: @background;
+}
+
+header {
+  color: @white;
+  font-size: 0;
+
+  .logo {
+    font-family: "Comic Sans MS";
+    font-size: 36px;
+    padding: 10px;
+  }
+
+  .tab {
+    font-size: 16px;
+    display: inline-block;
+    font-family: Menlo, Consolas, Monaco, monospace;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+main {
+  background: #EEE;
+  padding: 40px;
+}
+
+.post-container {
+  background: white;
+  color: @background;
+  margin-bottom: 40px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &.active {
+    color: red;
+
+    &:hover {
+      background: green;
+    }
+  }
+}
+
+.post {
+  padding: 25px;
+  font-size: 16px;
+  font-family: sans-serif;
+
+  .blurb {
+    line-height: 26px;
+  }
+
+  .date {
+    color: lighten(@background, 40%);
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+
+  .link {
+    padding-top: 20px;
+
+    a {
+      text-decoration: none;
+      color: blue;
+
+      &:hover {
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
