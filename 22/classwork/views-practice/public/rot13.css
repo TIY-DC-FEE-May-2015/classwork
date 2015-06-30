@@ -1,0 +1,12 @@
+.title {
+  font-weight: bold;
+}
+
+.monospace {
+  font-family: monospace;
+  font-size: 18px;
+}
+
+button {
+  display: block;
+}
