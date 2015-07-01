@@ -52,8 +52,8 @@ module.exports = function(resource) {
       return next()
     }
 
-    row = u.extend(row, req.body, {id: id})
-
+    row = u.extend({id: id}, row, req.body)
+    
     return res.json(row)
   })
 

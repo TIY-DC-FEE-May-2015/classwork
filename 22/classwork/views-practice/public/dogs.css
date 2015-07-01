@@ -1,0 +1,8 @@
+.dog {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.mascot-info, .name-info {
+  display: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="dogs.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="dogs-container">
+  </div>
+
+  <template id="dog-template">
+    <div class="dog-info">
+    {{#if isAGoodDog}}
+      Meet <span class="name">{{ name }}</span>.
+      <span class="name">{{ name }}</span> is a 
+      <span class="breed">{{ breed }}</span> and is such a good dog.
+    {{else}}
+      I am human garbage and incapable of loving furry creatures.
+    {{/if}}
+    </div>
+    <div class="name-info">
+      Name: <input type="text" class="name-input" />
+      <button class="name-button">Update Name</button>
+    </div>
+    <div class="mascot-info">
+      Mascot for: <input type="text" class="mascot-input" />
+      <button class="mascot-button">Update Company</button>
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+
+  <script src="dogs.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title></title>
+  <link href="wine.css" rel="stylesheet" />
+</head>
+<body>
+
+  <button id="add-wine-button">Add Wine</button>
+
+  <div id="wine-list-container" class="container active">
+  </div>
+
+  <div id="wine-edit-container" class="container">
+    <div class="input-container">
+      <div class="row">
+        Winery: <input type="text" id="input-winery" />
+      </div>
+      <div class="row">
+        Style: <input type="text" id="input-style" />
+      </div>
+      <div class="row">
+        Year: <input type="text" id="input-year" />
+      </div>
+      <div class="row">
+        Price: <input type="text" id="input-price" />
+      </div>
+      <div class="row">
+        Color: 
+        <select id="input-color">
+          <option value="red">Red</option>
+          <option value="white">White</option>
+          <option value="rose">Rose</option>
+        </select>
+      </div>
+      <div class="row">
+        Sparkling? <input type="checkbox" id="input-sparkling" />
+      </div>
+
+      <button id="save-button">Save Wine</button>
+    </div>
+  </div>
+
+  <template id="wine-template">
+    <div class="top">
+      <div class="winery">{{ vineyard }}</div>
+      <div class="style">{{ year }} {{ style }}</div>
+    </div>
+    <div class="type hidden">
+      {{ color }}{{#if sparkling}}, Sparkling{{/if}}
+    </div>
+    <div class="price hidden">Price: {{ price }}</div>
+    <div class="buttons hidden">
+      <button class="edit-wine">Edit</button>
+      <button class="delete-wine">Delete</button>
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+
+  <script src="wine-model.js"></script>
+  <script src="wine-collection.js"></script>
+  <script src="wine-view.js"></script>
+  <script src="edit-wine-view.js"></script>
+
+  <script src="wine.js"></script>
+
+</body>
+</html>

@@ -25,6 +25,6 @@ var simpleResource = require("./simple_resource")
   PUT /movie/:id
   DELETE /movie/:id
 */
-app.use(simpleResource("dog"))
+app.use(simpleResource("wine"))
 
 module.exports = app;

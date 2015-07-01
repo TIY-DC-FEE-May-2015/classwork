@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wine {
+  margin: 10px;
+  border-bottom: solid 1px red;
+  padding-bottom: 10px;
+}
+
+.wine .hidden {
+  display: none;
+}
+
+.wine.open .hidden {
+  display: block;
+}
+
+.container {
+  display: none;
+}
+
+.container.active {
+  display: block;
+}
+
+.input-container {
+  margin: 10px;
+}
+
+.row {
+  margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#card-container {
+  font-size: 0;
+}
+
+.card {
+  display: inline-block;
+  width: 24%;
+  height: 24vh;
+  border: solid 1px black;
+  margin: .5%;
+}
+
+.card-target {
+  width: 50%;
+  height: 50%;
+}
