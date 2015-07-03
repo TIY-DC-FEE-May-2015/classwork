@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="contents-view" class="view">
+    <div id="link-container">
+    </div>
+    <div id="write-container">
+      <a href="#write">Write A New Page</a>
+    </div>
+  </div>
+
+  <div id="read-page-view" class="view">
+  </div>
+
+  <div id="write-page-view" class="view">
+    <div class="row page-num">
+      Page Number: <input type="text" id="write-page-number" />
+      <div class="validation">This page number already exists</div>
+    </div>
+    <div class="row page-content">
+      Content: <textarea id="write-page-content"></textarea>
+      <div class="validation">Pages require words, you are not e.e. cummings, write something damnit</div>
+    </div>
+    <div class="row">
+      Link 1 Page Number: <input type="text" id="write-link1-page" />    
+    </div>
+    <div class="row">
+      Link 1 Action: <input type="text" id="write-link1-action" />    
+    </div>
+    <div class="row">
+      Link 2 Page Number: <input type="text" id="write-link2-page" />    
+    </div>
+    <div class="row">
+      Link 2 Action: <input type="text" id="write-link2-action" />    
+    </div>
+
+    <button class="finish-page">Save Page to Server</button>
+  </div>
+
+  <template id="page-content-template">
+    <div class="content">
+      {{ content }}
+    </div>
+
+    <div class="links">
+    {{#each links}}
+      <div class="link">
+        <a href="#read/{{ page }}">Page {{ page }}: {{ action }}</a>
+      </div>
+    {{/each}}
+    </div>
+  </template>
+
+  <template id="page-link-template">
+    <div class="page-link">
+      Page {{page}}: <a href="#read/{{page}}">{{ content }}</a>
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+
+  <script src="index.js"></script>
+  
+  <script src="model.js"></script>
+  <script src="collection.js"></script>
+
+  <script src="view.js"></script>
+  
+  <script src="router.js"></script>
+  
+</body>
+</html>

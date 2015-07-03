@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="cat-list-container">
+  </div>
+
+  <template id="cat-template">
+    <div class="name">Name: {{ name }}</div>
+    <div class="age">Age: {{ age }}</div>
+    <div class="description">
+      {{ name }} has {{ paws }} paws
+      {{#if thinksAboutMurder}}
+        and is always thinking about killing you
+      {{/if}}
+    </div>
+  </template>
+
+  <script src="libs/underscore.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/handlebars.js"></script>
+  <script src="libs/backbone.js"></script>
+
+  <script src="model.js"></script>
+  <script src="collection.js"></script>
+  <script src="view.js"></script>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

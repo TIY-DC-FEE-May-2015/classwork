@@ -1,0 +1,31 @@
+#read-page-view, #write-page-view {
+  display: none;
+}
+
+#write-page-view {
+  font-size: 20px;
+}
+
+.row {
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+.row input {
+  font-size: 20px;
+}
+
+.row textarea {
+  font-size: 20px;
+  height: 200px;
+  width: 400px;
+}
+
+.validation {
+  display: none;
+}
+
+.row.invalid .validation {
+  display: block;
+  color: red;
+}
