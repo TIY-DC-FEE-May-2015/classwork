@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="iterationApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <link href="iteration.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="student-section" ng-controller="StudentController">
+
+      <div class="student" ng-repeat="s in students">
+        <span ng-click="clickStudent(s)"
+          ng-class="{ clicked: s.clickedOn }">
+          {{ s.name || s }}
+        </span>
+      </div>
+
+      <div class="registration">
+        Name: <input type="text" ng-model="registrationName" />
+        <button ng-click="addStudent()">
+          Register Student
+        </button>
+      </div>
+
+    </div>
+
+
+    <script src="libs/angular.js"></script>
+    <script src="iteration.js"></script>
+
+  </body>
+</html>

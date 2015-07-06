@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <link href="todo.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div ng-controller="todo">
+
+      <div class="view-change">
+        <span ng-click="viewType = 'all'">All</span>
+        <span ng-click="viewType = 'complete'">Complete</span>
+        <span ng-click="viewType = 'incomplete'">Incomplete</span>
+      </div>
+
+      <div class="task-container"
+        ng-class="{
+          complete: viewType === 'complete',
+          incomplete: viewType === 'incomplete'
+        }">
+
+        <div class="task" 
+          ng-repeat="t in tasks" 
+          ng-class="{ 
+            complete: t.complete,
+            incomplete: !t.complete
+          }"> 
+          <div class="content" ng-click="clickTask(t)">
+            {{ t.task | titleize }}
+          </div>
+          
+          <div class="delete" ng-click="deleteTask(t)"></div>
+        </div>
+      </div>
+
+      <div class="add-task-form">
+        <div class="row">
+          Task name: <input type="text" ng-model="taskName" />
+        </div>
+        <div class="row">
+          Value: <input type="text" ng-model="taskValue" />
+        </div>
+        <div class="row">
+          <button ng-click="addTask()">Add task</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="libs/angular.js"></script>
+
+    <script src="filterCollection.js"></script>
+    <script src="todo.js"></script>
+
+  </body>
+</html>

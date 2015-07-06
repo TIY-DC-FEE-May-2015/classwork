@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <script src="libs/angular.js"></script>
+
+  </head>
+  <body>
+
+    <div class="row">
+      Hello, my name is <input type="text" ng-model="name" ng-init="name = 'Kyle'" />
+    </div>
+    <div class="row">
+      My profession is <input type="text" ng-model="profession" />
+    </div>
+    <div class="row">
+      I am a guy? <input type="checkbox" ng-model="male"/>
+    </div>
+
+    <div class="row">
+      <span ng-if="name">
+        Hello, my name is {{ name }}.
+      </span>
+      <span ng-if="male">
+        I am a dude.
+      </span>
+      <span ng-if="!male">
+        I am a chick.
+      </span>
+      <span ng-if="profession">
+        My profession is {{ profession }}
+      </span>
+      <span ng-if="color">
+        and my favorite color is {{ color }}
+      </span>
+    </div>
+
+
+  </body>
+</html>

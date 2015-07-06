@@ -1,0 +1,28 @@
+.task-container.incomplete .task.complete {
+  display: none;
+}
+
+.task-container.complete .task.incomplete {
+  display: none;
+}
+
+.task {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.task.complete .content {
+  color: red;
+  text-decoration: line-through;
+}
+
+.content {
+  display: inline-block;
+}
+.delete {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("close.png") center center no-repeat;
+  background-size: cover;
+}
