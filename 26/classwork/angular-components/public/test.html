@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="letsLearnAboutScopeApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    
+  </head>
+  <body>
+
+    <div ng-controller="OutsideController">
+      
+      <div ng-controller="InsideController">
+        {{ text }} : {{ childRandomValues }}
+      </div>
+      
+      <div ng-controller="InsideController">
+        {{ text }}
+      </div>
+      
+      <div ng-controller="InsideController">
+        {{ text }}
+      </div>
+
+      <button ng-click="getInsideValues()">Get Random Values</button>
+      <button ng-click="showScope()">Show Scope</button>
+    </div>
+
+    <script src="libs/angular.js"></script>
+    <script src="index.js"></script>
+    
+  </body>
+</html>

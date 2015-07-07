@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="validationApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <link rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+
+    <div ng-controller="ListController">
+
+      <table class="zebra-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="student in students">
+            <td ng-class="{ invalid: (invalid.existingId === student.id) }">
+              <div class="red-bar left"></div>
+              <span ng-bind="student.id"></span>
+            </td>
+            <td ng-bind="student.name"></td>
+            <td ng-bind="student.email"></td>
+          </tr>
+          <tr class="input-row">
+
+            <form ng-submit="submitNewStudent()">
+              <td>
+                <input type="number" 
+                  ng-model="studentId" />
+                <div ng-show="invalid.studentId" class="red-bar"></div>
+              </td>
+              <td>
+                <input type="text" ng-model="name" />
+                <div ng-show="invalid.name" class="red-bar"></div>
+              </td>
+              <td>
+                <input type="text" ng-model="email" />
+                <input type="submit" />
+                <div ng-show="invalid.email" class="red-bar"></div>
+              </td>
+            </form>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <script src="libs/underscore.js"></script>
+    <script src="libs/angular.js"></script>
+    <script src="index.js"></script>
+    
+  </body>
+</html>

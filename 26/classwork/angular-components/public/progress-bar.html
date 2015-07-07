@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="progressBarApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <link href="progress-bar.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div ng-controller="ProgressBarController">
+      <div class="progress-bar">
+        <div class="progress-bar-foreground" ng-style="progressWidth">
+        </div>
+      </div>
+
+      <button ng-click="start()">Start</button>
+      <button ng-click="stop()">Stop</button>
+
+      Milliseconds: <input type="number" ng-model="ms">
+      <button ng-click="changeTime(ms)">Change Time</button>
+      
+    </div>
+
+    <script src="libs/angular.js"></script>
+    <script src="progress-bar.js"></script>
+    
+  </body>
+</html>
+
