@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="chatApp">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="chatContainer">
+    
+      <div class="mainChatWindow" ng-controller="ChatController">
+
+        <div class="chat-message" ng-repeat="message in messages">
+          <span class="user">{{ users[message.user_id] }}:</span>
+          <span class="text">{{ message.text }}</span>
+        </div>
+
+      </div>
+
+      <div class="userSidebar" ng-controller="UserController">
+        
+        <div class="registerUser">
+          <div>
+            Username: <input type="text" ng-model="username">
+          </div>
+          <div>
+            Full Name: <input type="text" ng-model="fullname">
+          </div>
+          <div>
+            Status: 
+            <select ng-model="status">
+              <option value="active">Active</option>
+              <option value="busy">Busy</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+          <div>
+            <button ng-click="registerUser()">Register User</button>
+          </div>
+        </div>
+
+        <div class="userList">
+          <div class="user" ng-repeat="user in users">
+            <span class="status-icon"
+              ng-class="user.status"></span>
+            <span class="name">{{ user.username }} ({{ user.fullname }})</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="messageForm" ng-controller="MessageController">
+
+        <div class="text-input">
+          <input type="text" class="message" ng-model="text" />
+        </div>
+        <div class="text-button">
+          <select class="user-dropdown" ng-model="user_id">
+            <option ng-repeat="user in users" ng-value="user._id">
+              {{ user.username }}
+            </option>
+          </select>
+          <button class="send" ng-click="sendMessage()">Send</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="libs/angular.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>

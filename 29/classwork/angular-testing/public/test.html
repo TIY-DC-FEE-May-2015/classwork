@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="testModule">
+  <head>
+    <title>The Iron Yard Test Runner</title>
+    <script src="libs/angular.js"></script>
+
+  </head>
+  <body>
+
+    <div ng-controller="TestController">
+      <div>
+        Button clicks: {{ clickCount }}
+      </div>
+      <button ng-click="clickButton()">Click me!</button>
+    </div>
+
+    <div ng-controller="AnotherController">
+      <div>
+        <span ng-show="loading">
+          loading...
+        </span>
+        <span ng-hide="loading">
+          Button clicks: {{ clickCount }}
+        </span>
+      </div>
+      <button ng-click="clickButton()">Click me!</button>
+    </div>
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>
