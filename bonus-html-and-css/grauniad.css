@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 500vh;
+}
+
+.sections {
+  background: rgb(0, 69, 110);
+  padding: 10px;
+}
+
+.current-section, .subsections {
+  display: inline-block;
+  background: rgb(223, 223, 223);
+  padding: 10px;
+}
+
+.page-header a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.page-header a:hover {
+  text-decoration: underline;
+}
+
+.section-navigation {
+  width: 100%;
+  padding: 0px 15px;
+  background: rgb(0, 86, 137);
+}
+
+.sub-navigation {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: rgb(239, 239, 239);
+}
+
+.sections a {
+  color: white;
+  margin: 0px 5px;
+}
+
+.current-section a {
+  color: blue;
+  margin: 0px 5px;
+}
+
+.subsections a {
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.home {
+  height: 20px;
+  width: 24px;
+  background-image: url("guardian_home.png");
+  background-position: center;
+  display: inline-block;
+}
+
+.section-title, .award-link {
+  font-size: 20px;
+  color: rgb(0, 69, 110);
+}
+
+.body-container {
+  padding: 15px;
+  position: relative;
+}
+
+.award-link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.headlines {
+  font-size: 0;
+}
+
+.large-column {
+  width: 75%;
+  border: solid 1px green;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0px;
+}
+
+.small-column {
+  width: 25%;
+  border: solid 1px red;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.small-feature {
+  height: 200px;
+}
+.large-feature {
+  font-size: 16px;
+  border: solid 1px gold;
+  height: 200px;
+}
+.large-subcolumn {
+  font-size: 16px;
+  width: 33.3333333%;
+  height: 100px;
+  display: inline-block;
+  border: solid 1px blue;
+}
+

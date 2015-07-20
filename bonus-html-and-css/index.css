@@ -1,0 +1,23 @@
+.ib {
+  display: inline-block;
+}
+
+.purple {
+  color: purple;
+}
+
+.ensmallened {
+  font-size: 12px;
+}
+
+.embiggened {
+  font-size: 26px;
+}
+
+.goofy {
+  font-family: "Comic Sans MS";
+}
+
+.normal {
+  font-weight: normal;
+}
